@@ -1,0 +1,19 @@
+.background{
+    background-image: url("./image/frontpage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.label{
+    color: red;
+}
+.error-message{
+    display: inline;
+    padding-left: 70px;
+    color: white;
+}
+li{
+    display: inline;
+    text-decoration: none;
+    font-size: 130%;
+    color: green;
+}
