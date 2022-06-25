@@ -60,7 +60,7 @@ $rows=mysqli_fetch_assoc($result);
         </script>
     </head>
     <body>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-dark py-3">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top py-3" style="background-color: #120c2f">
     <div class="container">
       <a class="navbar-brand text-light" href="home_page.php"><h2><b>USED CARS</b></h2></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -73,22 +73,22 @@ $rows=mysqli_fetch_assoc($result);
             <a class="nav-link active text-white" aria-current="page" href="home_page.php" >Home</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link text-white" href="used_car_list.php" >My Used car list</a>
+            <a class="nav-link text-white" href="used_car_list.php" >My posts</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link text-white" href="sell_car1.php" >sell car</a>
+            <a class="nav-link text-white" href="sell_car1.php" >Sell car</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="enquiries.php" >Enquiries</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="edit_profile.php" >Edit Profile</a>
+            <a class="nav-link text-white" href="edit_profile.php" >Edit profile</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="view_list.php" >View full listing</a>
+            <a class="nav-link text-white" href="view_list.php" >All posts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="login.php" >Log out</a>
+            <a class="nav-link text-white" href="login.php" >Logout</a>
           </li>
         </ul>
       </div>

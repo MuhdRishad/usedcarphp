@@ -52,7 +52,7 @@ $result=mysqli_query($conn,$sql);
         </style>
     </head>
     <body>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-dark py-3">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top py-3" style="background-color: #120c2f">
     <div class="container">
       <a class="navbar-brand text-light" href="home_page.php"><h2><b>USED CARS</b></h2></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -65,39 +65,44 @@ $result=mysqli_query($conn,$sql);
             <a class="nav-link active text-white" aria-current="page" href="home_page.php" >Home</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link text-white" href="used_car_list.php" >My Used car list</a>
+            <a class="nav-link text-white" href="used_car_list.php" >My posts</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link text-white" href="sell_car1.php" >sell car</a>
+            <a class="nav-link text-white" href="sell_car1.php" >Sell car</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="enquiries.php" >Enquiries</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="edit_profile.php" >Edit Profile</a>
+            <a class="nav-link text-white" href="edit_profile.php" >Edit profile</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="view_list.php" >View full listing</a>
+            <a class="nav-link text-white" href="view_list.php" >All posts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="login.php" >Log out</a>
+            <a class="nav-link text-white" href="login.php" >Logout</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   
-       <table >
-           <tr>
-               <th>image</th>
-               <th>city</th>
-               <th>year</th>
-               <th>model</th>
-        </tr><?php
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-2"></div>
+              <div class="col-lg-8">
+              <table >
+          <?php
                 if(mysqli_num_rows($result)>0){
                     while($row=mysqli_fetch_assoc($result)){
                        echo "";
                         ?>
+                        <tr>
+                        <th>image</th>
+                        <th>city</th>
+                        <th>year</th>
+                        <th>model</th>
+                        </tr>
 
                         <tr>
                             <td><img class="image" src="photo/<?php echo $row['image'];?>"></td>
@@ -115,6 +120,10 @@ $result=mysqli_query($conn,$sql);
                       }?>
 
                       </table>
+              </div>
+              <div class="col-lg-2"></div>
+          </div>
+      </div>
                       
                       
 
