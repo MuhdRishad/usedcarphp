@@ -38,23 +38,41 @@ $rows=mysqli_fetch_assoc($result);
             }
         </style>
     <body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-dark py-3">
     <div class="container">
-    <div class="row">
-        <div class="col">
-            <h1 class="text-center text-danger my-3" style="font-size:60px">
-                <b>USED CAR</b>
-            </h1>
-        </div>
-    </div>
-        <ul class="my-5">
-            <li><a href="home_page.php" class="text-white text-decoration-none">Home</a></li>
-            <li class="ms-5"><a href="used_car_list.php" class="text-white text-decoration-none">My used car listing</a></li>
-            <li class="ms-5"><a href="sell_car1.php" class="text-white text-decoration-none">Sell your car</a></li>
-            <li class="ms-5"><a href="enquiries.php" class="text-white text-decoration-none">Enquiries</a></li>
-            <li class="ms-5"><a href="edit_profile.php" class="text-white text-decoration-none">Edit Profile</a></li>
-            <li class="ms-5"><a href="view_list.php" class="text-white text-decoration-none">View full listing</a></li>
-            <li class="ms-5"><a href="login.php" class="text-white text-decoration-none">Logout</a></li>
+      <a class="navbar-brand text-light" href="home_page.php"><h2><b>USED CARS</b></h2></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="home_page.php" >Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white" href="used_car_list.php" >My Used car list</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white" href="sell_car1.php" >sell car</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="enquiries.php" >Enquiries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="edit_profile.php" >Edit Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="view_list.php" >View full listing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="login.php" >Log out</a>
+          </li>
         </ul>
+      </div>
+    </div>
+  </nav>
+  
 
         <div class="row">
             <div class="col-lg-3"></div>
