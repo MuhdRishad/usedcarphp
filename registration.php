@@ -18,6 +18,7 @@
            <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="ps-3">
             <h1 class="text-danger my-3 text-center"><b>USED CAR</b></h1>
+            
            <form action="register.php" name="myForm" onsubmit="return validate()" method="POST" >
 
             <label class="label" >Register Now?</label>
@@ -52,34 +53,13 @@
             <br><br>
 
             <label for="state" class="label">State*:</label>
-            <select id="state" name="state" style="margin-left:100px;">
-                <option selected disabled value="">select state</option>
-                <option value="Kerala">Kerala</option>
-                <option value="Tamil Nadu">Tamil Nadu</option>
-                <option value="Karnataka">Karnataka</option>
-                <option value="Maharashtra">Maharashtra</option>
-                <option value="Goa">Goa</option>
-                <option value="Andra Pradesh">Andra Pradesh</option>
-                <option value="Telengana">Telengana</option>
-                <option value="Rajasthan">Rajasthan</option>
-                <option value="Gujarath">Gujarath</option>
-                <option value="Assam">Assam</option>
-            </select><p id="eight" class="error-message"></p>
+            <input type="text" id="state" name="state" style="margin-left:100px;">
+                <p id="eight" class="error-message"></p>
             <br><br>
 
             <label for="city" class="label">City*:</label>
-            <select id="city" name="city" style="margin-left:108px;">
-             <option value="Malappuram">Malappuram</option>
-                <option value="Kozhikkodu">Kozhikkodu</option>
-                <option value="Kannur">Kannur</option>
-                <option value="Wayanad">Wayanad</option>
-                <option value="Kasargode">Kasargode</option>
-                <option value="Thrissur">Thrissur</option>
-                <option value="Eranamkulam">Eranamkulam</option>
-                <option value="Idukki">Idukki</option>
-                <option value="Palakkad">Palakkad</option>
-                <option value="Alappuzha">Alappuzha</option>
-            </select><p id="nine" class="error-message"></p>
+            <input type="text" id="city" name="city" style="margin-left:108px;">
+             <p id="nine" class="error-message"></p>
             <br><br>
 
             <label for="address" class="label">Street/Address:*</label>

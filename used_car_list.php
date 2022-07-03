@@ -22,12 +22,14 @@ $result=mysqli_query($conn,$sql);
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <style>
              body{
-                background-image: url("./image/frontpage.jpg");
+                background-image: url("./image/main.jpg");
+                background-size: cover;
                 background-repeat: no-repeat;
-
+                background-position: center;
+                height: 100vh;
             }
             table{
-                color: white;
+                color: black;
                 margin-top: 40px;
                 font-size: 120%;
             }
@@ -106,9 +108,9 @@ $result=mysqli_query($conn,$sql);
 
                         <tr>
                             <td><img class="image" src="photo/<?php echo $row['image'];?>"></td>
-                            <td><?php echo $row['city'];?></td>
-                            <td><?php echo $row['mgf_year'];?></td>
-                            <td><?php echo $row['model'];?></td>
+                            <td><b><?php echo $row['city'];?></b></td>
+                            <td><b><?php echo $row['mgf_year'];?></b></td>
+                            <td><b><?php echo $row['model'];?></b></td>
                     </tr>
                     <tr>
                     <td><a href="update_car_details.php?id=<?php echo $row['last_id'];?>" class="button  text-decoration-none">Edit</a>

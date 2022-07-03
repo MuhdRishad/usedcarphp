@@ -32,9 +32,10 @@ $rows=mysqli_fetch_assoc($result);
 
         <style>
             body{
-            background-image: url("./image/frontpage.jpg");
-            background-repeat: no-repeat;
+            background-image: url("./image/main.jpg");
             background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             }
         </style>
     <body>

@@ -21,7 +21,11 @@ $result=mysqli_query($conn,$sql);
         <link rel="stylesheet" href="style.css">
         <style>
             body{
-            background-image: url("./image/frontpage.jpg");
+            background-image: url("./image/main.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
             }
            .messages{
             color: red;

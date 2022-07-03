@@ -22,12 +22,14 @@ $result=mysqli_query($conn,$sql);
     <link rel="stylesheet" href="style.css">
         <style>
              body{
-            background-image: url("./image/frontpage.jpg");
+            background-image: url("./image/main.jpg");
             background-size: cover;
             background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
             }
             table{
-                color: white;
+                color: black;
                 margin-top: 40px;
                 font-size: 120%;
             }
@@ -104,9 +106,9 @@ $result=mysqli_query($conn,$sql);
                        </tr>
                         <tr>
                             <td><img class="image" src="photo/<?php echo $row['image'];?>"></td>
-                            <td><?php echo $row['city'];?></td>
-                            <td><?php echo $row['mgf_year'];?></td>
-                            <td><?php echo $row['model'];?></td>
+                            <td><b><?php echo $row['city'];?></b></td>
+                            <td><b><?php echo $row['mgf_year'];?></b></td>
+                            <td><b><?php echo $row['model'];?></b></td>
                         </tr>
                         <tr>
                         <td><a href="contact_seller.php?id=<?php echo $row['userID'];?>" class="contact text-decoration-none">CONTACT SELLER</a></td>
